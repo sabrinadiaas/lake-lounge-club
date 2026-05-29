@@ -1,0 +1,11 @@
+/* style.css */
+
+/* Esconde as abas que não estão ativas */
+.tab-content { 
+    display: none; 
+}
+
+/* Exibe apenas a aba que recebe a classe 'active' */
+.tab-content.active { 
+    display: block; 
+}

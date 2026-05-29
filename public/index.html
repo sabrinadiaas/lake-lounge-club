@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lake Lounge Club - Front-End de Testes</title>
+    <!-- Tailwind para deixar o design moderno -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 flex h-screen font-sans">
+
+    <!-- MENU LATERAL -->
+    <aside class="w-64 bg-emerald-900 text-white flex flex-col shadow-xl z-10">
+        <div class="p-6 border-b border-emerald-800">
+            <h1 class="text-2xl font-bold">Lake Lounge</h1>
+            <p class="text-sm text-emerald-300">Sistema Web (Frontend)</p>
+        </div>
+        <nav class="flex-1 p-4">
+            <ul class="space-y-2">
+                <li><button onclick="mudarAba('tab-login')" class="w-full text-left p-3 hover:bg-emerald-800 rounded transition">1. Login (App)</button></li>
+                <li><button onclick="mudarAba('tab-portaria')" class="w-full text-left p-3 hover:bg-emerald-800 rounded transition">2. Portaria</button></li>
+                <li><button onclick="mudarAba('tab-convites')" class="w-full text-left p-3 hover:bg-emerald-800 rounded transition">3. Emitir Convite</button></li>
+                <li><button onclick="mudarAba('tab-dependentes')" class="w-full text-left p-3 hover:bg-emerald-800 rounded transition">4. Dependentes</button></li>
+                <li><button onclick="mudarAba('tab-financeiro')" class="w-full text-left p-3 hover:bg-emerald-800 rounded transition">5. Financeiro</button></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- ÁREA PRINCIPAL DAS TELAS -->
+    <main class="flex-1 p-10 overflow-y-auto">
+
+        <!-- 1. TELA DE LOGIN -->
+        <section id="tab-login" class="tab-content active max-w-md mx-auto bg-white p-8 rounded-xl shadow-md mt-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Acesso ao App</h2>
+            <div class="space-y-4">
+                <div>
+                    <label class="block text-sm text-gray-600 mb-1">E-mail</label>
+                    <input type="email" id="email" class="w-full p-3 border rounded focus:ring-2 focus:ring-emerald-500 outline-none" placeholder="carlos@email.com">
+                </div>
+                <div>
+                    <label class="block text-sm text-gray-600 mb-1">Senha</label>
+                    <input type="password" id="senha" class="w-full p-3 border rounded focus:ring-2 focus:ring-emerald-500 outline-none" placeholder="***">
+                </div>
+                <button id="btnEntrar" onclick="fazerLogin()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded transition">Entrar</button>
+                <div id="msgLogin" class="mt-4 p-3 rounded hidden text-center font-medium"></div>
+            </div>
+        </section>
+
+        <!-- 2. TELA DA PORTARIA -->
+        <section id="tab-portaria" class="tab-content max-w-lg mx-auto bg-white p-8 rounded-xl shadow-md mt-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Validação na Catraca</h2>
+            <div class="space-y-4">
+                <div>
+                    <label class="block text-sm text-gray-600 mb-1">Código da Carteirinha</label>
+                    <input type="text" id="codigoPortaria" class="w-full p-3 border rounded focus:ring-2 focus:ring-emerald-500 outline-none uppercase" placeholder="Ex: S101 ou S202">
+                </div>
+                <button id="btnValidarPortaria" onclick="validarPortaria()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded transition">Verificar Acesso</button>
+                <div id="msgPortaria" class="mt-4 p-4 rounded hidden text-center font-bold text-lg"></div>
+            </div>
+        </section>
+
+        <!-- 3. TELA DE CONVITES -->
+        <section id="tab-convites" class="tab-content max-w-lg mx-auto bg-white p-8 rounded-xl shadow-md mt-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Gerar Convite Digital</h2>
+            <div class="space-y-4">
+                <div>
+                    <label class="block text-sm text-gray-600 mb-1">ID do Sócio Anfitrião</label>
+                    <input type="text" id="idSocioConvite" class="w-full p-3 border rounded focus:ring-2 focus:ring-emerald-500 outline-none uppercase" placeholder="Ex: S101">
+                </div>
+                <div>
+                    <label class="block text-sm text-gray-600 mb-1">Nome do Convidado</label>
+                    <input type="text" id="nomeConvidado" class="w-full p-3 border rounded focus:ring-2 focus:ring-emerald-500 outline-none">
+                </div>
+                <div>
+                    <label class="block text-sm text-gray-600 mb-1">CPF do Convidado</label>
+                    <input type="text" id="cpfConvidado" class="w-full p-3 border rounded focus:ring-2 focus:ring-emerald-500 outline-none" placeholder="000.000.000-00">
+                </div>
+                <button id="btnGerarConvite" onclick="gerarConvite()" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 rounded transition">Emitir Convite</button>
+                <div id="msgConvite" class="mt-4 p-3 rounded hidden text-center font-medium"></div>
+            </div>
+        </section>
+
+        <!-- 4. TELA DE DEPENDENTES -->
+        <section id="tab-dependentes" class="tab-content max-w-lg mx-auto bg-white p-8 rounded-xl shadow-md mt-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Cadastrar Dependente</h2>
+            <div class="space-y-4">
+                <div>
+                    <label class="block text-sm text-gray-600 mb-1">ID do Sócio Titular</label>
+                    <input type="text" id="idSocioDep" class="w-full p-3 border rounded focus:ring-2 focus:ring-emerald-500 outline-none uppercase" placeholder="Ex: S101">
+                </div>
+                <div>
+                    <label class="block text-sm text-gray-600 mb-1">Nome do Dependente</label>
+                    <input type="text" id="nomeDep" class="w-full p-3 border rounded focus:ring-2 focus:ring-emerald-500 outline-none">
+                </div>
+                <div>
+                    <label class="block text-sm text-gray-600 mb-1">Idade</label>
+                    <input type="number" id="idadeDep" class="w-full p-3 border rounded focus:ring-2 focus:ring-emerald-500 outline-none">
+                </div>
+                <div class="flex items-center gap-2 mt-2">
+                    <input type="checkbox" id="comprovanteDep" class="w-5 h-5 text-emerald-600">
+                    <label for="comprovanteDep" class="text-sm text-gray-700">Possui comprovante universitário (se > 21 anos)</label>
+                </div>
+                <button id="btnCadastrarDep" onclick="cadastrarDependente()" class="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 rounded transition mt-4">Salvar Cadastro</button>
+                <div id="msgDep" class="mt-4 p-3 rounded hidden text-center font-medium"></div>
+            </div>
+        </section>
+
+        <!-- 5. TELA FINANCEIRA -->
+        <section id="tab-financeiro" class="tab-content max-w-lg mx-auto bg-white p-8 rounded-xl shadow-md mt-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Consulta Financeira</h2>
+            <div class="space-y-4">
+                <div class="flex gap-2">
+                    <input type="text" id="idSocioFin" class="flex-1 p-3 border rounded focus:ring-2 focus:ring-emerald-500 outline-none uppercase" placeholder="ID do Sócio (Ex: S101, S202)">
+                    <button id="btnConsultarFin" onclick="consultarFinanceiro()" class="bg-teal-600 hover:bg-teal-700 text-white font-bold px-6 rounded transition">Consultar</button>
+                </div>
+                
+                <div id="painelFinanceiro" class="mt-6 border rounded-lg p-6 bg-gray-50 hidden">
+                    <h3 id="finNome" class="text-xl font-bold text-gray-800 mb-2">Nome</h3>
+                    <p class="text-gray-600 mb-4">Status Geral: <span id="finStatus" class="font-bold">...</span></p>
+                    
+                    <div class="bg-white p-4 border rounded shadow-sm flex justify-between items-center">
+                        <div>
+                            <p class="text-sm text-gray-500">Mensalidade Atual</p>
+                            <p id="finMensalidade" class="font-bold text-lg">...</p>
+                        </div>
+                        <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded text-sm hover:bg-gray-300">Gerar Boleto</button>
+                    </div>
+                </div>
+                <div id="msgFin" class="mt-4 p-3 rounded hidden text-center font-medium"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
