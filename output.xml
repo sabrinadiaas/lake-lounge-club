@@ -1,90 +1,228 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.14.3 on win32)" generated="2026-06-04T20:22:17.337665" rpa="false" schemaversion="5">
-<suite id="s1" name="Login Tests Individual" source="C:\Users\prisc\OneDrive\Desktop\UI - 1\login_tests_individual.robot">
-<test id="s1-t1" name="CTUI01 - Login bem-sucedido" line="14">
+<robot generator="Robot 7.4.2 (Python 3.14.3 on win32)" generated="2026-06-04T20:34:12.915836" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Tests2 Individual" source="C:\Users\prisc\OneDrive\Desktop\trabalho teste\login_tests2_individual.robot">
+<test id="s1-t1" name="CTUI02 - Clicar em entrar com ambos os campos vazios" line="15">
 <kw name="Dado que o usuário está na página de login do Lake Lounge Club">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-06-04T20:22:17.622216" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<msg time="2026-06-04T20:34:13.166881" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-06-04T20:22:17.621927" elapsed="2.561113"/>
+<status status="PASS" start="2026-06-04T20:34:13.166619" elapsed="1.383756"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-06-04T20:22:20.183504" elapsed="0.030460"/>
+<status status="PASS" start="2026-06-04T20:34:14.550855" elapsed="0.025629"/>
 </kw>
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>${VELOCIDADE}</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2026-06-04T20:22:20.214475" elapsed="0.001215"/>
+<status status="PASS" start="2026-06-04T20:34:14.576726" elapsed="0.000311"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id=btnEntrar</arg>
-<arg>50s</arg>
+<arg>20s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-06-04T20:22:20.215922" elapsed="1.040299"/>
+<status status="PASS" start="2026-06-04T20:34:14.577166" elapsed="1.052512"/>
 </kw>
-<status status="PASS" start="2026-06-04T20:22:17.621277" elapsed="3.635181"/>
+<status status="PASS" start="2026-06-04T20:34:13.166014" elapsed="2.464108"/>
 </kw>
-<kw name="Quando ele preenche o e-mail &quot;carlos@email.com&quot; e a senha &quot;123&quot;" source_name="Quando ele preenche o e-mail &quot;${email}&quot; e a senha &quot;${senha}&quot;">
+<kw name="Quando ele deixa os campos de e-mail e senha em branco">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-04T20:22:21.258134" level="INFO">Typing text 'carlos@email.com' into text field 'xpath=//input[@type='email' or @name='email']'.</msg>
+<msg time="2026-06-04T20:34:15.634104" level="INFO">Typing text '' into text field 'xpath=//input[@type='email' or @name='email']'.</msg>
 <arg>xpath=//input[@type='email' or @name='email']</arg>
-<arg>${email}</arg>
+<arg>${EMPTY}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-04T20:22:21.257690" elapsed="1.667217"/>
+<status status="PASS" start="2026-06-04T20:34:15.632292" elapsed="1.642590"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-04T20:22:22.925947" level="INFO">Typing text '123' into text field 'xpath=//input[@type='password' or @name='senha']'.</msg>
+<msg time="2026-06-04T20:34:17.276988" level="INFO">Typing text '' into text field 'xpath=//input[@type='password' or @name='senha']'.</msg>
 <arg>xpath=//input[@type='password' or @name='senha']</arg>
-<arg>${senha}</arg>
+<arg>${EMPTY}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-04T20:22:22.925306" elapsed="1.653109"/>
+<status status="PASS" start="2026-06-04T20:34:17.275440" elapsed="1.647997"/>
 </kw>
-<status status="PASS" start="2026-06-04T20:22:21.257101" elapsed="3.321598"/>
+<status status="PASS" start="2026-06-04T20:34:15.631244" elapsed="3.292427"/>
 </kw>
 <kw name="E clica no botão para entrar">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>id=btnEntrar</arg>
 <arg>20s</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2026-06-04T20:22:24.580126" elapsed="1.540830"/>
+<status status="PASS" start="2026-06-04T20:34:18.924938" elapsed="1.548699"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-06-04T20:22:26.122047" level="INFO">Clicking element 'id=btnEntrar'.</msg>
+<msg time="2026-06-04T20:34:20.474782" level="INFO">Clicking element 'id=btnEntrar'.</msg>
 <arg>id=btnEntrar</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-04T20:22:26.121499" elapsed="1.108513"/>
+<status status="PASS" start="2026-06-04T20:34:20.474165" elapsed="1.145824"/>
 </kw>
-<status status="PASS" start="2026-06-04T20:22:24.579445" elapsed="2.650823"/>
+<status status="PASS" start="2026-06-04T20:34:18.924168" elapsed="2.695988"/>
 </kw>
-<kw name="Então o sistema deve exibir um mensagem Login realizado com sucesso">
+<kw name="Então o sistema deve exibir uma mensagem Email inválido">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>Login realizado com sucesso</arg>
+<arg>Email inválido</arg>
 <arg>20s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2026-06-04T20:22:27.231385" elapsed="0.520275"/>
+<status status="PASS" start="2026-06-04T20:34:21.620985" elapsed="0.525666"/>
 </kw>
-<status status="PASS" start="2026-06-04T20:22:27.230860" elapsed="0.521001"/>
+<status status="PASS" start="2026-06-04T20:34:21.620569" elapsed="0.526468"/>
 </kw>
-<status status="PASS" start="2026-06-04T20:22:17.620651" elapsed="10.131656"/>
+<status status="PASS" start="2026-06-04T20:34:13.165377" elapsed="8.982399"/>
+</test>
+<test id="s1-t2" name="CTUI03 - Clicar em entrar preenchendo apenas o e-mail" line="21">
+<kw name="Dado que o usuário está na página de login do Lake Lounge Club">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-06-04T20:34:22.152177" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-06-04T20:34:22.151526" elapsed="1.747545"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-06-04T20:34:23.899353" elapsed="0.540300"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${VELOCIDADE}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2026-06-04T20:34:24.439920" elapsed="0.000327"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=btnEntrar</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-04T20:34:24.440384" elapsed="1.028747"/>
+</kw>
+<status status="PASS" start="2026-06-04T20:34:22.150670" elapsed="3.318719"/>
+</kw>
+<kw name="Quando ele preenche apenas o e-mail &quot;carlos@email.com&quot; e deixa a senha em branco" source_name="Quando ele preenche apenas o e-mail &quot;${email}&quot; e deixa a senha em branco">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-04T20:34:25.471365" level="INFO">Typing text 'carlos@email.com' into text field 'xpath=//input[@type='email' or @name='email']'.</msg>
+<arg>xpath=//input[@type='email' or @name='email']</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-04T20:34:25.470857" elapsed="1.713058"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-04T20:34:27.184911" level="INFO">Typing text '' into text field 'xpath=//input[@type='password' or @name='senha']'.</msg>
+<arg>xpath=//input[@type='password' or @name='senha']</arg>
+<arg>${EMPTY}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-04T20:34:27.184204" elapsed="1.667491"/>
+</kw>
+<status status="PASS" start="2026-06-04T20:34:25.470196" elapsed="3.381825"/>
+</kw>
+<kw name="E clica no botão para entrar">
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>id=btnEntrar</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-06-04T20:34:28.853726" elapsed="1.535733"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-06-04T20:34:30.390690" level="INFO">Clicking element 'id=btnEntrar'.</msg>
+<arg>id=btnEntrar</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-04T20:34:30.390022" elapsed="1.133153"/>
+</kw>
+<status status="PASS" start="2026-06-04T20:34:28.852924" elapsed="2.670635"/>
+</kw>
+<kw name="Então o sistema deve exibir uma mensagem Senha inválida">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Senha inválida</arg>
+<arg>20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-06-04T20:34:31.525276" elapsed="0.531451"/>
+</kw>
+<status status="PASS" start="2026-06-04T20:34:31.524391" elapsed="0.532686"/>
+</kw>
+<status status="PASS" start="2026-06-04T20:34:22.149389" elapsed="9.908487"/>
+</test>
+<test id="s1-t3" name="CTUI04 - Clicar em entrar preenchendo apenas a senha" line="27">
+<kw name="Dado que o usuário está na página de login do Lake Lounge Club">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-06-04T20:34:32.062457" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-06-04T20:34:32.061691" elapsed="2.617075"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-06-04T20:34:34.679111" elapsed="0.546199"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${VELOCIDADE}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2026-06-04T20:34:35.226150" elapsed="0.001015"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=btnEntrar</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-06-04T20:34:35.228063" elapsed="1.051534"/>
+</kw>
+<status status="PASS" start="2026-06-04T20:34:32.060801" elapsed="4.219134"/>
+</kw>
+<kw name="Quando ele deixa o e-mail em branco e preenche apenas a senha &quot;123&quot;" source_name="Quando ele deixa o e-mail em branco e preenche apenas a senha &quot;${senha}&quot;">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-04T20:34:36.284070" level="INFO">Typing text '' into text field 'xpath=//input[@type='email' or @name='email']'.</msg>
+<arg>xpath=//input[@type='email' or @name='email']</arg>
+<arg>${EMPTY}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-04T20:34:36.281984" elapsed="1.722019"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-04T20:34:38.005742" level="INFO">Typing text '123' into text field 'xpath=//input[@type='password' or @name='senha']'.</msg>
+<arg>xpath=//input[@type='password' or @name='senha']</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-04T20:34:38.004651" elapsed="1.729127"/>
+</kw>
+<status status="PASS" start="2026-06-04T20:34:36.281014" elapsed="3.453041"/>
+</kw>
+<kw name="E clica no botão para entrar">
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>id=btnEntrar</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-06-04T20:34:39.735387" elapsed="1.538588"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-06-04T20:34:41.275211" level="INFO">Clicking element 'id=btnEntrar'.</msg>
+<arg>id=btnEntrar</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-04T20:34:41.274515" elapsed="1.133331"/>
+</kw>
+<status status="PASS" start="2026-06-04T20:34:39.734727" elapsed="2.673524"/>
+</kw>
+<kw name="Então o sistema deve exibir uma mensagem Email inválido">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Email inválido</arg>
+<arg>20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-06-04T20:34:42.410128" elapsed="0.532633"/>
+</kw>
+<status status="PASS" start="2026-06-04T20:34:42.409144" elapsed="0.534020"/>
+</kw>
+<status status="PASS" start="2026-06-04T20:34:32.059525" elapsed="10.884527"/>
 </test>
 <kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2026-06-04T20:22:27.753332" elapsed="2.679700"/>
+<status status="PASS" start="2026-06-04T20:34:42.947265" elapsed="8.200689"/>
 </kw>
 <doc>Script Individual de Testes de Interface (UI) para a Tela de Login do Lake Lounge Club.</doc>
-<status status="PASS" start="2026-06-04T20:22:17.341324" elapsed="13.091844"/>
+<status status="PASS" start="2026-06-04T20:34:12.917581" elapsed="38.230564"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Login Tests Individual" id="s1" pass="1" fail="0" skip="0">Login Tests Individual</stat>
+<stat name="Login Tests2 Individual" id="s1" pass="3" fail="0" skip="0">Login Tests2 Individual</stat>
 </suite>
 </statistics>
 <errors>
