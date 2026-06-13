@@ -1,444 +1,428 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.14.6 on darwin)" generated="2026-06-13T03:13:03.530517" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.14.6 on darwin)" generated="2026-06-13T04:02:10.438630" rpa="false" schemaversion="5">
 <suite id="s1" name="Convites" source="/Users/marianalopes/Desktop/lakeloungeclub/convites.robot">
-<test id="s1-t1" name="CT01 — Emissão de Convite com Sucesso" line="16">
-<kw name="Abrir Tela De Cadastro De Convite">
+<test id="s1-t1" name="CT03 — Validação de Convite Ativo (Sucesso)" line="13">
+<kw name="Abrir Tela Da Portaria">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-06-13T03:13:03.623804" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/convites/novo # Ajuste para a URL local do projeto'.</msg>
-<msg time="2026-06-13T03:13:06.039370" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-06-13T03:13:06.039619" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
-  (Session info: chrome=148.0.7778.216)
+<msg time="2026-06-13T04:02:10.545180" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/portaria # Ajuste para a URL local do projeto'.</msg>
+<msg time="2026-06-13T04:02:16.460119" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-06-13T04:02:16.460328" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=149.0.7827.103)
 Stacktrace:
-0   chromedriver                        0x00000001011a4c40 cxxbridge1$str$ptr + 3221216
-1   chromedriver                        0x000000010119cb1c cxxbridge1$str$ptr + 3188156
-2   chromedriver                        0x0000000100c5f8f4 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75152
-3   chromedriver                        0x0000000100c5799c _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 42552
-4   chromedriver                        0x0000000100c4a140 cxxbridge1$string$len + 5152
-5   chromedriver                        0x0000000100c4bc44 cxxbridge1$string$len + 12068
-6   chromedriver                        0x0000000100c4a5a8 cxxbridge1$string$len + 6280
-7   chromedriver                        0x0000000100c49d54 cxxbridge1$string$len + 4148
-8   chromedriver                        0x0000000100c49a80 cxxbridge1$string$len + 3424
-9   chromedriver                        0x0000000100c47644 chromedriver + 226884
-10  chromedriver                        0x0000000100c48110 chromedriver + 229648
-11  chromedriver                        0x0000000100c62dd8 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 88692
-12  chromedriver                        0x0000000100ce81d0 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634476
-13  chromedriver                        0x0000000100ce76f4 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 631696
-14  chromedriver                        0x0000000100c9d9c0 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 329308
-15  chromedriver                        0x0000000101162b70 cxxbridge1$str$ptr + 2950672
-16  chromedriver                        0x00000001011662c8 cxxbridge1$str$ptr + 2964840
-17  chromedriver                        0x00000001011478a8 cxxbridge1$str$ptr + 2839368
-18  chromedriver                        0x0000000101166b48 cxxbridge1$str$ptr + 2967016
-19  chromedriver                        0x00000001011383d4 cxxbridge1$str$ptr + 2776692
-20  chromedriver                        0x000000010118b7ac cxxbridge1$str$ptr + 3117644
-21  chromedriver                        0x000000010118b90c cxxbridge1$str$ptr + 3117996
-22  chromedriver                        0x000000010119c774 cxxbridge1$str$ptr + 3187220
+0   chromedriver                        0x00000001009f6f88 cxxbridge1$str$ptr + 3190432
+1   chromedriver                        0x00000001009ef134 cxxbridge1$str$ptr + 3158092
+2   chromedriver                        0x000000010049b3a8 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x0000000100493148 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 40704
+4   chromedriver                        0x0000000100486154 cxxbridge1$string$len + 4688
+5   chromedriver                        0x0000000100487b40 cxxbridge1$string$len + 11324
+6   chromedriver                        0x00000001004865bc cxxbridge1$string$len + 5816
+7   chromedriver                        0x0000000100485da4 cxxbridge1$string$len + 3744
+8   chromedriver                        0x0000000100485a90 cxxbridge1$string$len + 2956
+9   chromedriver                        0x0000000100483828 chromedriver + 227368
+10  chromedriver                        0x00000001004842f4 chromedriver + 230132
+11  chromedriver                        0x000000010049e81c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 87508
+12  chromedriver                        0x000000010052385c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 632340
+13  chromedriver                        0x0000000100522d9c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 629588
+14  chromedriver                        0x00000001004d9314 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 327884
+15  chromedriver                        0x00000001009b5a30 cxxbridge1$str$ptr + 2922824
+16  chromedriver                        0x00000001009b91ac cxxbridge1$str$ptr + 2937028
+17  chromedriver                        0x000000010099b648 cxxbridge1$str$ptr + 2815328
+18  chromedriver                        0x00000001009b9a40 cxxbridge1$str$ptr + 2939224
+19  chromedriver                        0x000000010098c870 cxxbridge1$str$ptr + 2754440
+20  chromedriver                        0x00000001009ddec0 cxxbridge1$str$ptr + 3087832
+21  chromedriver                        0x00000001009de020 cxxbridge1$str$ptr + 3088184
+22  chromedriver                        0x00000001009eed8c cxxbridge1$str$ptr + 3157156
 23  libsystem_pthread.dylib             0x000000018c821c58 _pthread_start + 136
 24  libsystem_pthread.dylib             0x000000018c81cc1c thread_start + 8
 </msg>
-<arg>${URL_CRIAR}</arg>
+<arg>${URL_PORTARIA}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2026-06-13T03:13:03.623692" elapsed="2.417661">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
-  (Session info: chrome=148.0.7778.216)
+<status status="FAIL" start="2026-06-13T04:02:10.545077" elapsed="5.917271">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=149.0.7827.103)
 Stacktrace:
-0   chromedriver                        0x00000001011a4c40 cxxbridge1$str$ptr + 3221216
-1   chromedriver                        0x000000010119cb1c cxxbridge1$str$ptr + 3188156
-2   chromedriver                        0x0000000100c5f8f4 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75152
-3   chromedriver                        0x0000000100c5799c _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 42552
-4   chromedriver                        0x0000000100c4a140 cxxbridge1$string$len + 5152
-5   chromedriver                        0x0000000100c4bc44 cxxbridge1$string$len + 12068
-6   chromedriver                        0x0000000100c4a5a8 cxxbridge1$string$len + 6280
-7   chromedriver                        0x0000000100c49d54 cxxbridge1$string$len + 4148
-8   chromedriver                        0x0000000100c49a80 cxxbridge1$strin...
+0   chromedriver                        0x00000001009f6f88 cxxbridge1$str$ptr + 3190432
+1   chromedriver                        0x00000001009ef134 cxxbridge1$str$ptr + 3158092
+2   chromedriver                        0x000000010049b3a8 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x0000000100493148 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 40704
+4   chromedriver                        0x0000000100486154 cxxbridge1$string$len + 4688
+5   chromedriver                        0x0000000100487b40 cxxbridge1$string$len + 11324
+6   chromedriver                        0x00000001004865bc cxxbridge1$string$len + 5816
+7   chromedriver                        0x0000000100485da4 cxxbridge1$string$len + 3744
+8   chromedriver                        0x0000000100485a90 cxxbridge1$strin...
     [ Message content over the limit has been removed. ]
-... _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 329308
-15  chromedriver                        0x0000000101162b70 cxxbridge1$str$ptr + 2950672
-16  chromedriver                        0x00000001011662c8 cxxbridge1$str$ptr + 2964840
-17  chromedriver                        0x00000001011478a8 cxxbridge1$str$ptr + 2839368
-18  chromedriver                        0x0000000101166b48 cxxbridge1$str$ptr + 2967016
-19  chromedriver                        0x00000001011383d4 cxxbridge1$str$ptr + 2776692
-20  chromedriver                        0x000000010118b7ac cxxbridge1$str$ptr + 3117644
-21  chromedriver                        0x000000010118b90c cxxbridge1$str$ptr + 3117996
-22  chromedriver                        0x000000010119c774 cxxbridge1$str$ptr + 3187220
+... _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 327884
+15  chromedriver                        0x00000001009b5a30 cxxbridge1$str$ptr + 2922824
+16  chromedriver                        0x00000001009b91ac cxxbridge1$str$ptr + 2937028
+17  chromedriver                        0x000000010099b648 cxxbridge1$str$ptr + 2815328
+18  chromedriver                        0x00000001009b9a40 cxxbridge1$str$ptr + 2939224
+19  chromedriver                        0x000000010098c870 cxxbridge1$str$ptr + 2754440
+20  chromedriver                        0x00000001009ddec0 cxxbridge1$str$ptr + 3087832
+21  chromedriver                        0x00000001009de020 cxxbridge1$str$ptr + 3088184
+22  chromedriver                        0x00000001009eed8c cxxbridge1$str$ptr + 3157156
 23  libsystem_pthread.dylib             0x000000018c821c58 _pthread_start + 136
 24  libsystem_pthread.dylib             0x000000018c81cc1c thread_start + 8</status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2026-06-13T03:13:06.041538" elapsed="0.000017"/>
+<status status="NOT RUN" start="2026-06-13T04:02:16.462522" elapsed="0.000018"/>
 </kw>
-<status status="FAIL" start="2026-06-13T03:13:03.623427" elapsed="2.418212">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
-  (Session info: chrome=148.0.7778.216)
+<status status="FAIL" start="2026-06-13T04:02:10.544799" elapsed="5.917822">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=149.0.7827.103)
 Stacktrace:
-0   chromedriver                        0x00000001011a4c40 cxxbridge1$str$ptr + 3221216
-1   chromedriver                        0x000000010119cb1c cxxbridge1$str$ptr + 3188156
-2   chromedriver                        0x0000000100c5f8f4 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75152
-3   chromedriver                        0x0000000100c5799c _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 42552
-4   chromedriver                        0x0000000100c4a140 cxxbridge1$string$len + 5152
-5   chromedriver                        0x0000000100c4bc44 cxxbridge1$string$len + 12068
-6   chromedriver                        0x0000000100c4a5a8 cxxbridge1$string$len + 6280
-7   chromedriver                        0x0000000100c49d54 cxxbridge1$string$len + 4148
-8   chromedriver                        0x0000000100c49a80 cxxbridge1$strin...
+0   chromedriver                        0x00000001009f6f88 cxxbridge1$str$ptr + 3190432
+1   chromedriver                        0x00000001009ef134 cxxbridge1$str$ptr + 3158092
+2   chromedriver                        0x000000010049b3a8 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x0000000100493148 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 40704
+4   chromedriver                        0x0000000100486154 cxxbridge1$string$len + 4688
+5   chromedriver                        0x0000000100487b40 cxxbridge1$string$len + 11324
+6   chromedriver                        0x00000001004865bc cxxbridge1$string$len + 5816
+7   chromedriver                        0x0000000100485da4 cxxbridge1$string$len + 3744
+8   chromedriver                        0x0000000100485a90 cxxbridge1$strin...
     [ Message content over the limit has been removed. ]
-... _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 329308
-15  chromedriver                        0x0000000101162b70 cxxbridge1$str$ptr + 2950672
-16  chromedriver                        0x00000001011662c8 cxxbridge1$str$ptr + 2964840
-17  chromedriver                        0x00000001011478a8 cxxbridge1$str$ptr + 2839368
-18  chromedriver                        0x0000000101166b48 cxxbridge1$str$ptr + 2967016
-19  chromedriver                        0x00000001011383d4 cxxbridge1$str$ptr + 2776692
-20  chromedriver                        0x000000010118b7ac cxxbridge1$str$ptr + 3117644
-21  chromedriver                        0x000000010118b90c cxxbridge1$str$ptr + 3117996
-22  chromedriver                        0x000000010119c774 cxxbridge1$str$ptr + 3187220
+... _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 327884
+15  chromedriver                        0x00000001009b5a30 cxxbridge1$str$ptr + 2922824
+16  chromedriver                        0x00000001009b91ac cxxbridge1$str$ptr + 2937028
+17  chromedriver                        0x000000010099b648 cxxbridge1$str$ptr + 2815328
+18  chromedriver                        0x00000001009b9a40 cxxbridge1$str$ptr + 2939224
+19  chromedriver                        0x000000010098c870 cxxbridge1$str$ptr + 2754440
+20  chromedriver                        0x00000001009ddec0 cxxbridge1$str$ptr + 3087832
+21  chromedriver                        0x00000001009de020 cxxbridge1$str$ptr + 3088184
+22  chromedriver                        0x00000001009eed8c cxxbridge1$str$ptr + 3157156
 23  libsystem_pthread.dylib             0x000000018c821c58 _pthread_start + 136
 24  libsystem_pthread.dylib             0x000000018c81cc1c thread_start + 8</status>
 </kw>
-<kw name="Preencher Nome Do Convidado">
-<arg>Ana Júlia Ribeiro</arg>
-<status status="NOT RUN" start="2026-06-13T03:13:06.041782" elapsed="0.000017"/>
+<kw name="Inserir Código Do Convite">
+<arg>LLC-2026-9876</arg>
+<status status="NOT RUN" start="2026-06-13T04:02:16.462798" elapsed="0.000016"/>
 </kw>
-<kw name="Preencher Data Do Evento">
-<arg>25/11/2026</arg>
-<status status="NOT RUN" start="2026-06-13T03:13:06.041856" elapsed="0.000009"/>
-</kw>
-<kw name="Selecionar Tipo De Ingresso">
-<arg>Pista</arg>
-<status status="NOT RUN" start="2026-06-13T03:13:06.041914" elapsed="0.000007"/>
-</kw>
-<kw name="Clicar No Botão Gerar Convite">
-<status status="NOT RUN" start="2026-06-13T03:13:06.041965" elapsed="0.000007"/>
+<kw name="Clicar No Botão Validar">
+<status status="NOT RUN" start="2026-06-13T04:02:16.462869" elapsed="0.000009"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${ALERTA_SUCESSO}</arg>
+<arg>${MENSAGEM_STATUS}</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2026-06-13T03:13:06.042010" elapsed="0.000007"/>
+<status status="NOT RUN" start="2026-06-13T04:02:16.462925" elapsed="0.000011"/>
 </kw>
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<arg>${ALERTA_SUCESSO}</arg>
-<arg>Convite gerado com sucesso!</arg>
+<arg>${MENSAGEM_STATUS}</arg>
+<arg>Entrada liberada com sucesso</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="NOT RUN" start="2026-06-13T03:13:06.042057" elapsed="0.000007"/>
+<status status="NOT RUN" start="2026-06-13T04:02:16.462979" elapsed="0.000009"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-06-13T03:13:06.042164" elapsed="0.065662"/>
+<status status="PASS" start="2026-06-13T04:02:16.463085" elapsed="0.066283"/>
 </kw>
-<doc>Testa a criação de um convite válido com saldo disponível.</doc>
-<status status="FAIL" start="2026-06-13T03:13:03.623143" elapsed="2.484753">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
-  (Session info: chrome=148.0.7778.216)
+<doc>Testa a liberação de entrada para um convite existente e ativo.</doc>
+<status status="FAIL" start="2026-06-13T04:02:10.544486" elapsed="5.984952">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=149.0.7827.103)
 Stacktrace:
-0   chromedriver                        0x00000001011a4c40 cxxbridge1$str$ptr + 3221216
-1   chromedriver                        0x000000010119cb1c cxxbridge1$str$ptr + 3188156
-2   chromedriver                        0x0000000100c5f8f4 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75152
-3   chromedriver                        0x0000000100c5799c _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 42552
-4   chromedriver                        0x0000000100c4a140 cxxbridge1$string$len + 5152
-5   chromedriver                        0x0000000100c4bc44 cxxbridge1$string$len + 12068
-6   chromedriver                        0x0000000100c4a5a8 cxxbridge1$string$len + 6280
-7   chromedriver                        0x0000000100c49d54 cxxbridge1$string$len + 4148
-8   chromedriver                        0x0000000100c49a80 cxxbridge1$strin...
+0   chromedriver                        0x00000001009f6f88 cxxbridge1$str$ptr + 3190432
+1   chromedriver                        0x00000001009ef134 cxxbridge1$str$ptr + 3158092
+2   chromedriver                        0x000000010049b3a8 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x0000000100493148 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 40704
+4   chromedriver                        0x0000000100486154 cxxbridge1$string$len + 4688
+5   chromedriver                        0x0000000100487b40 cxxbridge1$string$len + 11324
+6   chromedriver                        0x00000001004865bc cxxbridge1$string$len + 5816
+7   chromedriver                        0x0000000100485da4 cxxbridge1$string$len + 3744
+8   chromedriver                        0x0000000100485a90 cxxbridge1$strin...
     [ Message content over the limit has been removed. ]
-... _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 329308
-15  chromedriver                        0x0000000101162b70 cxxbridge1$str$ptr + 2950672
-16  chromedriver                        0x00000001011662c8 cxxbridge1$str$ptr + 2964840
-17  chromedriver                        0x00000001011478a8 cxxbridge1$str$ptr + 2839368
-18  chromedriver                        0x0000000101166b48 cxxbridge1$str$ptr + 2967016
-19  chromedriver                        0x00000001011383d4 cxxbridge1$str$ptr + 2776692
-20  chromedriver                        0x000000010118b7ac cxxbridge1$str$ptr + 3117644
-21  chromedriver                        0x000000010118b90c cxxbridge1$str$ptr + 3117996
-22  chromedriver                        0x000000010119c774 cxxbridge1$str$ptr + 3187220
+... _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 327884
+15  chromedriver                        0x00000001009b5a30 cxxbridge1$str$ptr + 2922824
+16  chromedriver                        0x00000001009b91ac cxxbridge1$str$ptr + 2937028
+17  chromedriver                        0x000000010099b648 cxxbridge1$str$ptr + 2815328
+18  chromedriver                        0x00000001009b9a40 cxxbridge1$str$ptr + 2939224
+19  chromedriver                        0x000000010098c870 cxxbridge1$str$ptr + 2754440
+20  chromedriver                        0x00000001009ddec0 cxxbridge1$str$ptr + 3087832
+21  chromedriver                        0x00000001009de020 cxxbridge1$str$ptr + 3088184
+22  chromedriver                        0x00000001009eed8c cxxbridge1$str$ptr + 3157156
 23  libsystem_pthread.dylib             0x000000018c821c58 _pthread_start + 136
 24  libsystem_pthread.dylib             0x000000018c81cc1c thread_start + 8</status>
 </test>
-<test id="s1-t2" name="CT02 — Bloqueio por Falta de Saldo" line="27">
-<kw name="Abrir Tela De Cadastro De Convite">
+<test id="s1-t2" name="CT04 — Validação de Código Inexistente" line="22">
+<kw name="Abrir Tela Da Portaria">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-06-13T03:13:06.108604" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/convites/novo # Ajuste para a URL local do projeto'.</msg>
-<msg time="2026-06-13T03:13:06.809714" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-06-13T03:13:06.809867" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
-  (Session info: chrome=148.0.7778.216)
+<msg time="2026-06-13T04:02:16.530104" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/portaria # Ajuste para a URL local do projeto'.</msg>
+<msg time="2026-06-13T04:02:17.139504" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-06-13T04:02:17.139656" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=149.0.7827.103)
 Stacktrace:
-0   chromedriver                        0x0000000102e14c40 cxxbridge1$str$ptr + 3221216
-1   chromedriver                        0x0000000102e0cb1c cxxbridge1$str$ptr + 3188156
-2   chromedriver                        0x00000001028cf8f4 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75152
-3   chromedriver                        0x00000001028c799c _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 42552
-4   chromedriver                        0x00000001028ba140 cxxbridge1$string$len + 5152
-5   chromedriver                        0x00000001028bbc44 cxxbridge1$string$len + 12068
-6   chromedriver                        0x00000001028ba5a8 cxxbridge1$string$len + 6280
-7   chromedriver                        0x00000001028b9d54 cxxbridge1$string$len + 4148
-8   chromedriver                        0x00000001028b9a80 cxxbridge1$string$len + 3424
-9   chromedriver                        0x00000001028b7644 chromedriver + 226884
-10  chromedriver                        0x00000001028b8110 chromedriver + 229648
-11  chromedriver                        0x00000001028d2dd8 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 88692
-12  chromedriver                        0x00000001029581d0 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634476
-13  chromedriver                        0x00000001029576f4 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 631696
-14  chromedriver                        0x000000010290d9c0 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 329308
-15  chromedriver                        0x0000000102dd2b70 cxxbridge1$str$ptr + 2950672
-16  chromedriver                        0x0000000102dd62c8 cxxbridge1$str$ptr + 2964840
-17  chromedriver                        0x0000000102db78a8 cxxbridge1$str$ptr + 2839368
-18  chromedriver                        0x0000000102dd6b48 cxxbridge1$str$ptr + 2967016
-19  chromedriver                        0x0000000102da83d4 cxxbridge1$str$ptr + 2776692
-20  chromedriver                        0x0000000102dfb7ac cxxbridge1$str$ptr + 3117644
-21  chromedriver                        0x0000000102dfb90c cxxbridge1$str$ptr + 3117996
-22  chromedriver                        0x0000000102e0c774 cxxbridge1$str$ptr + 3187220
+0   chromedriver                        0x0000000100a26f88 cxxbridge1$str$ptr + 3190432
+1   chromedriver                        0x0000000100a1f134 cxxbridge1$str$ptr + 3158092
+2   chromedriver                        0x00000001004cb3a8 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001004c3148 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 40704
+4   chromedriver                        0x00000001004b6154 cxxbridge1$string$len + 4688
+5   chromedriver                        0x00000001004b7b40 cxxbridge1$string$len + 11324
+6   chromedriver                        0x00000001004b65bc cxxbridge1$string$len + 5816
+7   chromedriver                        0x00000001004b5da4 cxxbridge1$string$len + 3744
+8   chromedriver                        0x00000001004b5a90 cxxbridge1$string$len + 2956
+9   chromedriver                        0x00000001004b3828 chromedriver + 227368
+10  chromedriver                        0x00000001004b42f4 chromedriver + 230132
+11  chromedriver                        0x00000001004ce81c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 87508
+12  chromedriver                        0x000000010055385c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 632340
+13  chromedriver                        0x0000000100552d9c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 629588
+14  chromedriver                        0x0000000100509314 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 327884
+15  chromedriver                        0x00000001009e5a30 cxxbridge1$str$ptr + 2922824
+16  chromedriver                        0x00000001009e91ac cxxbridge1$str$ptr + 2937028
+17  chromedriver                        0x00000001009cb648 cxxbridge1$str$ptr + 2815328
+18  chromedriver                        0x00000001009e9a40 cxxbridge1$str$ptr + 2939224
+19  chromedriver                        0x00000001009bc870 cxxbridge1$str$ptr + 2754440
+20  chromedriver                        0x0000000100a0dec0 cxxbridge1$str$ptr + 3087832
+21  chromedriver                        0x0000000100a0e020 cxxbridge1$str$ptr + 3088184
+22  chromedriver                        0x0000000100a1ed8c cxxbridge1$str$ptr + 3157156
 23  libsystem_pthread.dylib             0x000000018c821c58 _pthread_start + 136
 24  libsystem_pthread.dylib             0x000000018c81cc1c thread_start + 8
 </msg>
-<arg>${URL_CRIAR}</arg>
+<arg>${URL_PORTARIA}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2026-06-13T03:13:06.108495" elapsed="0.701868">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
-  (Session info: chrome=148.0.7778.216)
+<status status="FAIL" start="2026-06-13T04:02:16.529992" elapsed="0.610186">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=149.0.7827.103)
 Stacktrace:
-0   chromedriver                        0x0000000102e14c40 cxxbridge1$str$ptr + 3221216
-1   chromedriver                        0x0000000102e0cb1c cxxbridge1$str$ptr + 3188156
-2   chromedriver                        0x00000001028cf8f4 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75152
-3   chromedriver                        0x00000001028c799c _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 42552
-4   chromedriver                        0x00000001028ba140 cxxbridge1$string$len + 5152
-5   chromedriver                        0x00000001028bbc44 cxxbridge1$string$len + 12068
-6   chromedriver                        0x00000001028ba5a8 cxxbridge1$string$len + 6280
-7   chromedriver                        0x00000001028b9d54 cxxbridge1$string$len + 4148
-8   chromedriver                        0x00000001028b9a80 cxxbridge1$strin...
+0   chromedriver                        0x0000000100a26f88 cxxbridge1$str$ptr + 3190432
+1   chromedriver                        0x0000000100a1f134 cxxbridge1$str$ptr + 3158092
+2   chromedriver                        0x00000001004cb3a8 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001004c3148 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 40704
+4   chromedriver                        0x00000001004b6154 cxxbridge1$string$len + 4688
+5   chromedriver                        0x00000001004b7b40 cxxbridge1$string$len + 11324
+6   chromedriver                        0x00000001004b65bc cxxbridge1$string$len + 5816
+7   chromedriver                        0x00000001004b5da4 cxxbridge1$string$len + 3744
+8   chromedriver                        0x00000001004b5a90 cxxbridge1$strin...
     [ Message content over the limit has been removed. ]
-... _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 329308
-15  chromedriver                        0x0000000102dd2b70 cxxbridge1$str$ptr + 2950672
-16  chromedriver                        0x0000000102dd62c8 cxxbridge1$str$ptr + 2964840
-17  chromedriver                        0x0000000102db78a8 cxxbridge1$str$ptr + 2839368
-18  chromedriver                        0x0000000102dd6b48 cxxbridge1$str$ptr + 2967016
-19  chromedriver                        0x0000000102da83d4 cxxbridge1$str$ptr + 2776692
-20  chromedriver                        0x0000000102dfb7ac cxxbridge1$str$ptr + 3117644
-21  chromedriver                        0x0000000102dfb90c cxxbridge1$str$ptr + 3117996
-22  chromedriver                        0x0000000102e0c774 cxxbridge1$str$ptr + 3187220
+... _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 327884
+15  chromedriver                        0x00000001009e5a30 cxxbridge1$str$ptr + 2922824
+16  chromedriver                        0x00000001009e91ac cxxbridge1$str$ptr + 2937028
+17  chromedriver                        0x00000001009cb648 cxxbridge1$str$ptr + 2815328
+18  chromedriver                        0x00000001009e9a40 cxxbridge1$str$ptr + 2939224
+19  chromedriver                        0x00000001009bc870 cxxbridge1$str$ptr + 2754440
+20  chromedriver                        0x0000000100a0dec0 cxxbridge1$str$ptr + 3087832
+21  chromedriver                        0x0000000100a0e020 cxxbridge1$str$ptr + 3088184
+22  chromedriver                        0x0000000100a1ed8c cxxbridge1$str$ptr + 3157156
 23  libsystem_pthread.dylib             0x000000018c821c58 _pthread_start + 136
 24  libsystem_pthread.dylib             0x000000018c81cc1c thread_start + 8</status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2026-06-13T03:13:06.810519" elapsed="0.000015"/>
+<status status="NOT RUN" start="2026-06-13T04:02:17.140345" elapsed="0.000022"/>
 </kw>
-<status status="FAIL" start="2026-06-13T03:13:06.108380" elapsed="0.702224">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
-  (Session info: chrome=148.0.7778.216)
+<status status="FAIL" start="2026-06-13T04:02:16.529875" elapsed="0.610564">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=149.0.7827.103)
 Stacktrace:
-0   chromedriver                        0x0000000102e14c40 cxxbridge1$str$ptr + 3221216
-1   chromedriver                        0x0000000102e0cb1c cxxbridge1$str$ptr + 3188156
-2   chromedriver                        0x00000001028cf8f4 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75152
-3   chromedriver                        0x00000001028c799c _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 42552
-4   chromedriver                        0x00000001028ba140 cxxbridge1$string$len + 5152
-5   chromedriver                        0x00000001028bbc44 cxxbridge1$string$len + 12068
-6   chromedriver                        0x00000001028ba5a8 cxxbridge1$string$len + 6280
-7   chromedriver                        0x00000001028b9d54 cxxbridge1$string$len + 4148
-8   chromedriver                        0x00000001028b9a80 cxxbridge1$strin...
+0   chromedriver                        0x0000000100a26f88 cxxbridge1$str$ptr + 3190432
+1   chromedriver                        0x0000000100a1f134 cxxbridge1$str$ptr + 3158092
+2   chromedriver                        0x00000001004cb3a8 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001004c3148 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 40704
+4   chromedriver                        0x00000001004b6154 cxxbridge1$string$len + 4688
+5   chromedriver                        0x00000001004b7b40 cxxbridge1$string$len + 11324
+6   chromedriver                        0x00000001004b65bc cxxbridge1$string$len + 5816
+7   chromedriver                        0x00000001004b5da4 cxxbridge1$string$len + 3744
+8   chromedriver                        0x00000001004b5a90 cxxbridge1$strin...
     [ Message content over the limit has been removed. ]
-... _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 329308
-15  chromedriver                        0x0000000102dd2b70 cxxbridge1$str$ptr + 2950672
-16  chromedriver                        0x0000000102dd62c8 cxxbridge1$str$ptr + 2964840
-17  chromedriver                        0x0000000102db78a8 cxxbridge1$str$ptr + 2839368
-18  chromedriver                        0x0000000102dd6b48 cxxbridge1$str$ptr + 2967016
-19  chromedriver                        0x0000000102da83d4 cxxbridge1$str$ptr + 2776692
-20  chromedriver                        0x0000000102dfb7ac cxxbridge1$str$ptr + 3117644
-21  chromedriver                        0x0000000102dfb90c cxxbridge1$str$ptr + 3117996
-22  chromedriver                        0x0000000102e0c774 cxxbridge1$str$ptr + 3187220
+... _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 327884
+15  chromedriver                        0x00000001009e5a30 cxxbridge1$str$ptr + 2922824
+16  chromedriver                        0x00000001009e91ac cxxbridge1$str$ptr + 2937028
+17  chromedriver                        0x00000001009cb648 cxxbridge1$str$ptr + 2815328
+18  chromedriver                        0x00000001009e9a40 cxxbridge1$str$ptr + 2939224
+19  chromedriver                        0x00000001009bc870 cxxbridge1$str$ptr + 2754440
+20  chromedriver                        0x0000000100a0dec0 cxxbridge1$str$ptr + 3087832
+21  chromedriver                        0x0000000100a0e020 cxxbridge1$str$ptr + 3088184
+22  chromedriver                        0x0000000100a1ed8c cxxbridge1$str$ptr + 3157156
 23  libsystem_pthread.dylib             0x000000018c821c58 _pthread_start + 136
 24  libsystem_pthread.dylib             0x000000018c81cc1c thread_start + 8</status>
 </kw>
-<kw name="Preencher Nome Do Convidado">
-<arg>Bruno Henrique Santos</arg>
-<status status="NOT RUN" start="2026-06-13T03:13:06.810739" elapsed="0.000014"/>
+<kw name="Inserir Código Do Convite">
+<arg>LLC-0000-0000</arg>
+<status status="NOT RUN" start="2026-06-13T04:02:17.140584" elapsed="0.000016"/>
 </kw>
-<kw name="Preencher Data Do Evento">
-<arg>25/11/2026</arg>
-<status status="NOT RUN" start="2026-06-13T03:13:06.810801" elapsed="0.000008"/>
-</kw>
-<kw name="Clicar No Botão Gerar Convite">
-<status status="NOT RUN" start="2026-06-13T03:13:06.810856" elapsed="0.000009"/>
+<kw name="Clicar No Botão Validar">
+<status status="NOT RUN" start="2026-06-13T04:02:17.140651" elapsed="0.000009"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${ALERTA_ERRO}</arg>
+<arg>${MENSAGEM_STATUS}</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2026-06-13T03:13:06.810901" elapsed="0.000007"/>
+<status status="NOT RUN" start="2026-06-13T04:02:17.140702" elapsed="0.000007"/>
 </kw>
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<arg>${ALERTA_ERRO}</arg>
-<arg>limite máximo de convites deste mês</arg>
+<arg>${MENSAGEM_STATUS}</arg>
+<arg>Código de convite não encontrado</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="NOT RUN" start="2026-06-13T03:13:06.810942" elapsed="0.000006"/>
+<status status="NOT RUN" start="2026-06-13T04:02:17.140747" elapsed="0.000006"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-06-13T03:13:06.811039" elapsed="0.065010"/>
+<status status="PASS" start="2026-06-13T04:02:17.140849" elapsed="0.068049"/>
 </kw>
-<doc>Testa o bloqueio quando o usuário não possui mais saldo de convites.</doc>
-<status status="FAIL" start="2026-06-13T03:13:06.108193" elapsed="0.767925">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
-  (Session info: chrome=148.0.7778.216)
+<doc>Testa a tentativa de validar um código que não consta no banco de dados.</doc>
+<status status="FAIL" start="2026-06-13T04:02:16.529664" elapsed="0.679326">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=149.0.7827.103)
 Stacktrace:
-0   chromedriver                        0x0000000102e14c40 cxxbridge1$str$ptr + 3221216
-1   chromedriver                        0x0000000102e0cb1c cxxbridge1$str$ptr + 3188156
-2   chromedriver                        0x00000001028cf8f4 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75152
-3   chromedriver                        0x00000001028c799c _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 42552
-4   chromedriver                        0x00000001028ba140 cxxbridge1$string$len + 5152
-5   chromedriver                        0x00000001028bbc44 cxxbridge1$string$len + 12068
-6   chromedriver                        0x00000001028ba5a8 cxxbridge1$string$len + 6280
-7   chromedriver                        0x00000001028b9d54 cxxbridge1$string$len + 4148
-8   chromedriver                        0x00000001028b9a80 cxxbridge1$strin...
+0   chromedriver                        0x0000000100a26f88 cxxbridge1$str$ptr + 3190432
+1   chromedriver                        0x0000000100a1f134 cxxbridge1$str$ptr + 3158092
+2   chromedriver                        0x00000001004cb3a8 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x00000001004c3148 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 40704
+4   chromedriver                        0x00000001004b6154 cxxbridge1$string$len + 4688
+5   chromedriver                        0x00000001004b7b40 cxxbridge1$string$len + 11324
+6   chromedriver                        0x00000001004b65bc cxxbridge1$string$len + 5816
+7   chromedriver                        0x00000001004b5da4 cxxbridge1$string$len + 3744
+8   chromedriver                        0x00000001004b5a90 cxxbridge1$strin...
     [ Message content over the limit has been removed. ]
-... _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 329308
-15  chromedriver                        0x0000000102dd2b70 cxxbridge1$str$ptr + 2950672
-16  chromedriver                        0x0000000102dd62c8 cxxbridge1$str$ptr + 2964840
-17  chromedriver                        0x0000000102db78a8 cxxbridge1$str$ptr + 2839368
-18  chromedriver                        0x0000000102dd6b48 cxxbridge1$str$ptr + 2967016
-19  chromedriver                        0x0000000102da83d4 cxxbridge1$str$ptr + 2776692
-20  chromedriver                        0x0000000102dfb7ac cxxbridge1$str$ptr + 3117644
-21  chromedriver                        0x0000000102dfb90c cxxbridge1$str$ptr + 3117996
-22  chromedriver                        0x0000000102e0c774 cxxbridge1$str$ptr + 3187220
+... _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 327884
+15  chromedriver                        0x00000001009e5a30 cxxbridge1$str$ptr + 2922824
+16  chromedriver                        0x00000001009e91ac cxxbridge1$str$ptr + 2937028
+17  chromedriver                        0x00000001009cb648 cxxbridge1$str$ptr + 2815328
+18  chromedriver                        0x00000001009e9a40 cxxbridge1$str$ptr + 2939224
+19  chromedriver                        0x00000001009bc870 cxxbridge1$str$ptr + 2754440
+20  chromedriver                        0x0000000100a0dec0 cxxbridge1$str$ptr + 3087832
+21  chromedriver                        0x0000000100a0e020 cxxbridge1$str$ptr + 3088184
+22  chromedriver                        0x0000000100a1ed8c cxxbridge1$str$ptr + 3157156
 23  libsystem_pthread.dylib             0x000000018c821c58 _pthread_start + 136
 24  libsystem_pthread.dylib             0x000000018c81cc1c thread_start + 8</status>
 </test>
-<test id="s1-t3" name="CT03 — Bloqueio por Data no Passado" line="38">
-<kw name="Abrir Tela De Cadastro De Convite">
+<test id="s1-t3" name="CT05 — Validação de Convite Expirado" line="31">
+<kw name="Abrir Tela Da Portaria">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-06-13T03:13:06.876666" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/convites/novo # Ajuste para a URL local do projeto'.</msg>
-<msg time="2026-06-13T03:13:07.386920" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-06-13T03:13:07.387081" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
-  (Session info: chrome=148.0.7778.216)
+<msg time="2026-06-13T04:02:17.209662" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/portaria # Ajuste para a URL local do projeto'.</msg>
+<msg time="2026-06-13T04:02:17.684809" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-06-13T04:02:17.684965" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=149.0.7827.103)
 Stacktrace:
-0   chromedriver                        0x0000000104734c40 cxxbridge1$str$ptr + 3221216
-1   chromedriver                        0x000000010472cb1c cxxbridge1$str$ptr + 3188156
-2   chromedriver                        0x00000001041ef8f4 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75152
-3   chromedriver                        0x00000001041e799c _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 42552
-4   chromedriver                        0x00000001041da140 cxxbridge1$string$len + 5152
-5   chromedriver                        0x00000001041dbc44 cxxbridge1$string$len + 12068
-6   chromedriver                        0x00000001041da5a8 cxxbridge1$string$len + 6280
-7   chromedriver                        0x00000001041d9d54 cxxbridge1$string$len + 4148
-8   chromedriver                        0x00000001041d9a80 cxxbridge1$string$len + 3424
-9   chromedriver                        0x00000001041d7644 chromedriver + 226884
-10  chromedriver                        0x00000001041d8110 chromedriver + 229648
-11  chromedriver                        0x00000001041f2dd8 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 88692
-12  chromedriver                        0x00000001042781d0 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 634476
-13  chromedriver                        0x00000001042776f4 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 631696
-14  chromedriver                        0x000000010422d9c0 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 329308
-15  chromedriver                        0x00000001046f2b70 cxxbridge1$str$ptr + 2950672
-16  chromedriver                        0x00000001046f62c8 cxxbridge1$str$ptr + 2964840
-17  chromedriver                        0x00000001046d78a8 cxxbridge1$str$ptr + 2839368
-18  chromedriver                        0x00000001046f6b48 cxxbridge1$str$ptr + 2967016
-19  chromedriver                        0x00000001046c83d4 cxxbridge1$str$ptr + 2776692
-20  chromedriver                        0x000000010471b7ac cxxbridge1$str$ptr + 3117644
-21  chromedriver                        0x000000010471b90c cxxbridge1$str$ptr + 3117996
-22  chromedriver                        0x000000010472c774 cxxbridge1$str$ptr + 3187220
+0   chromedriver                        0x00000001025c2f88 cxxbridge1$str$ptr + 3190432
+1   chromedriver                        0x00000001025bb134 cxxbridge1$str$ptr + 3158092
+2   chromedriver                        0x00000001020673a8 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x000000010205f148 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 40704
+4   chromedriver                        0x0000000102052154 cxxbridge1$string$len + 4688
+5   chromedriver                        0x0000000102053b40 cxxbridge1$string$len + 11324
+6   chromedriver                        0x00000001020525bc cxxbridge1$string$len + 5816
+7   chromedriver                        0x0000000102051da4 cxxbridge1$string$len + 3744
+8   chromedriver                        0x0000000102051a90 cxxbridge1$string$len + 2956
+9   chromedriver                        0x000000010204f828 chromedriver + 227368
+10  chromedriver                        0x00000001020502f4 chromedriver + 230132
+11  chromedriver                        0x000000010206a81c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 87508
+12  chromedriver                        0x00000001020ef85c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 632340
+13  chromedriver                        0x00000001020eed9c _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 629588
+14  chromedriver                        0x00000001020a5314 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 327884
+15  chromedriver                        0x0000000102581a30 cxxbridge1$str$ptr + 2922824
+16  chromedriver                        0x00000001025851ac cxxbridge1$str$ptr + 2937028
+17  chromedriver                        0x0000000102567648 cxxbridge1$str$ptr + 2815328
+18  chromedriver                        0x0000000102585a40 cxxbridge1$str$ptr + 2939224
+19  chromedriver                        0x0000000102558870 cxxbridge1$str$ptr + 2754440
+20  chromedriver                        0x00000001025a9ec0 cxxbridge1$str$ptr + 3087832
+21  chromedriver                        0x00000001025aa020 cxxbridge1$str$ptr + 3088184
+22  chromedriver                        0x00000001025bad8c cxxbridge1$str$ptr + 3157156
 23  libsystem_pthread.dylib             0x000000018c821c58 _pthread_start + 136
 24  libsystem_pthread.dylib             0x000000018c81cc1c thread_start + 8
 </msg>
-<arg>${URL_CRIAR}</arg>
+<arg>${URL_PORTARIA}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2026-06-13T03:13:06.876575" elapsed="0.510999">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
-  (Session info: chrome=148.0.7778.216)
+<status status="FAIL" start="2026-06-13T04:02:17.209553" elapsed="0.475921">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=149.0.7827.103)
 Stacktrace:
-0   chromedriver                        0x0000000104734c40 cxxbridge1$str$ptr + 3221216
-1   chromedriver                        0x000000010472cb1c cxxbridge1$str$ptr + 3188156
-2   chromedriver                        0x00000001041ef8f4 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75152
-3   chromedriver                        0x00000001041e799c _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 42552
-4   chromedriver                        0x00000001041da140 cxxbridge1$string$len + 5152
-5   chromedriver                        0x00000001041dbc44 cxxbridge1$string$len + 12068
-6   chromedriver                        0x00000001041da5a8 cxxbridge1$string$len + 6280
-7   chromedriver                        0x00000001041d9d54 cxxbridge1$string$len + 4148
-8   chromedriver                        0x00000001041d9a80 cxxbridge1$strin...
+0   chromedriver                        0x00000001025c2f88 cxxbridge1$str$ptr + 3190432
+1   chromedriver                        0x00000001025bb134 cxxbridge1$str$ptr + 3158092
+2   chromedriver                        0x00000001020673a8 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x000000010205f148 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 40704
+4   chromedriver                        0x0000000102052154 cxxbridge1$string$len + 4688
+5   chromedriver                        0x0000000102053b40 cxxbridge1$string$len + 11324
+6   chromedriver                        0x00000001020525bc cxxbridge1$string$len + 5816
+7   chromedriver                        0x0000000102051da4 cxxbridge1$string$len + 3744
+8   chromedriver                        0x0000000102051a90 cxxbridge1$strin...
     [ Message content over the limit has been removed. ]
-... _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 329308
-15  chromedriver                        0x00000001046f2b70 cxxbridge1$str$ptr + 2950672
-16  chromedriver                        0x00000001046f62c8 cxxbridge1$str$ptr + 2964840
-17  chromedriver                        0x00000001046d78a8 cxxbridge1$str$ptr + 2839368
-18  chromedriver                        0x00000001046f6b48 cxxbridge1$str$ptr + 2967016
-19  chromedriver                        0x00000001046c83d4 cxxbridge1$str$ptr + 2776692
-20  chromedriver                        0x000000010471b7ac cxxbridge1$str$ptr + 3117644
-21  chromedriver                        0x000000010471b90c cxxbridge1$str$ptr + 3117996
-22  chromedriver                        0x000000010472c774 cxxbridge1$str$ptr + 3187220
+... _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 327884
+15  chromedriver                        0x0000000102581a30 cxxbridge1$str$ptr + 2922824
+16  chromedriver                        0x00000001025851ac cxxbridge1$str$ptr + 2937028
+17  chromedriver                        0x0000000102567648 cxxbridge1$str$ptr + 2815328
+18  chromedriver                        0x0000000102585a40 cxxbridge1$str$ptr + 2939224
+19  chromedriver                        0x0000000102558870 cxxbridge1$str$ptr + 2754440
+20  chromedriver                        0x00000001025a9ec0 cxxbridge1$str$ptr + 3087832
+21  chromedriver                        0x00000001025aa020 cxxbridge1$str$ptr + 3088184
+22  chromedriver                        0x00000001025bad8c cxxbridge1$str$ptr + 3157156
 23  libsystem_pthread.dylib             0x000000018c821c58 _pthread_start + 136
 24  libsystem_pthread.dylib             0x000000018c81cc1c thread_start + 8</status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2026-06-13T03:13:07.387734" elapsed="0.000016"/>
+<status status="NOT RUN" start="2026-06-13T04:02:17.685628" elapsed="0.000016"/>
 </kw>
-<status status="FAIL" start="2026-06-13T03:13:06.876476" elapsed="0.511334">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
-  (Session info: chrome=148.0.7778.216)
+<status status="FAIL" start="2026-06-13T04:02:17.209436" elapsed="0.476269">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=149.0.7827.103)
 Stacktrace:
-0   chromedriver                        0x0000000104734c40 cxxbridge1$str$ptr + 3221216
-1   chromedriver                        0x000000010472cb1c cxxbridge1$str$ptr + 3188156
-2   chromedriver                        0x00000001041ef8f4 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75152
-3   chromedriver                        0x00000001041e799c _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 42552
-4   chromedriver                        0x00000001041da140 cxxbridge1$string$len + 5152
-5   chromedriver                        0x00000001041dbc44 cxxbridge1$string$len + 12068
-6   chromedriver                        0x00000001041da5a8 cxxbridge1$string$len + 6280
-7   chromedriver                        0x00000001041d9d54 cxxbridge1$string$len + 4148
-8   chromedriver                        0x00000001041d9a80 cxxbridge1$strin...
+0   chromedriver                        0x00000001025c2f88 cxxbridge1$str$ptr + 3190432
+1   chromedriver                        0x00000001025bb134 cxxbridge1$str$ptr + 3158092
+2   chromedriver                        0x00000001020673a8 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x000000010205f148 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 40704
+4   chromedriver                        0x0000000102052154 cxxbridge1$string$len + 4688
+5   chromedriver                        0x0000000102053b40 cxxbridge1$string$len + 11324
+6   chromedriver                        0x00000001020525bc cxxbridge1$string$len + 5816
+7   chromedriver                        0x0000000102051da4 cxxbridge1$string$len + 3744
+8   chromedriver                        0x0000000102051a90 cxxbridge1$strin...
     [ Message content over the limit has been removed. ]
-... _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 329308
-15  chromedriver                        0x00000001046f2b70 cxxbridge1$str$ptr + 2950672
-16  chromedriver                        0x00000001046f62c8 cxxbridge1$str$ptr + 2964840
-17  chromedriver                        0x00000001046d78a8 cxxbridge1$str$ptr + 2839368
-18  chromedriver                        0x00000001046f6b48 cxxbridge1$str$ptr + 2967016
-19  chromedriver                        0x00000001046c83d4 cxxbridge1$str$ptr + 2776692
-20  chromedriver                        0x000000010471b7ac cxxbridge1$str$ptr + 3117644
-21  chromedriver                        0x000000010471b90c cxxbridge1$str$ptr + 3117996
-22  chromedriver                        0x000000010472c774 cxxbridge1$str$ptr + 3187220
+... _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 327884
+15  chromedriver                        0x0000000102581a30 cxxbridge1$str$ptr + 2922824
+16  chromedriver                        0x00000001025851ac cxxbridge1$str$ptr + 2937028
+17  chromedriver                        0x0000000102567648 cxxbridge1$str$ptr + 2815328
+18  chromedriver                        0x0000000102585a40 cxxbridge1$str$ptr + 2939224
+19  chromedriver                        0x0000000102558870 cxxbridge1$str$ptr + 2754440
+20  chromedriver                        0x00000001025a9ec0 cxxbridge1$str$ptr + 3087832
+21  chromedriver                        0x00000001025aa020 cxxbridge1$str$ptr + 3088184
+22  chromedriver                        0x00000001025bad8c cxxbridge1$str$ptr + 3157156
 23  libsystem_pthread.dylib             0x000000018c821c58 _pthread_start + 136
 24  libsystem_pthread.dylib             0x000000018c81cc1c thread_start + 8</status>
 </kw>
-<kw name="Preencher Nome Do Convidado">
-<arg>Clara Mendonça</arg>
-<status status="NOT RUN" start="2026-06-13T03:13:07.387944" elapsed="0.000014"/>
+<kw name="Inserir Código Do Convite">
+<arg>LLC-2025-1122</arg>
+<status status="NOT RUN" start="2026-06-13T04:02:17.685841" elapsed="0.000014"/>
 </kw>
-<kw name="Preencher Data Do Evento">
-<arg>10/01/2024</arg>
-<status status="NOT RUN" start="2026-06-13T03:13:07.388002" elapsed="0.000009"/>
-</kw>
-<kw name="Clicar No Botão Gerar Convite">
-<status status="NOT RUN" start="2026-06-13T03:13:07.388056" elapsed="0.000008"/>
+<kw name="Clicar No Botão Validar">
+<status status="NOT RUN" start="2026-06-13T04:02:17.685907" elapsed="0.000008"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${ALERTA_ERRO}</arg>
+<arg>${MENSAGEM_STATUS}</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2026-06-13T03:13:07.388100" elapsed="0.000007"/>
+<status status="NOT RUN" start="2026-06-13T04:02:17.685955" elapsed="0.000009"/>
 </kw>
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<arg>${ALERTA_ERRO}</arg>
-<arg>Não é possível emitir convites para datas passadas</arg>
+<arg>${MENSAGEM_STATUS}</arg>
+<arg>Este convite está expirado</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="NOT RUN" start="2026-06-13T03:13:07.388144" elapsed="0.000006"/>
+<status status="NOT RUN" start="2026-06-13T04:02:17.686003" elapsed="0.000008"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-06-13T03:13:07.388234" elapsed="0.067368"/>
+<status status="PASS" start="2026-06-13T04:02:17.686107" elapsed="0.068307"/>
 </kw>
-<doc>Testa a validação de erro ao inserir uma data retroativa.</doc>
-<status status="FAIL" start="2026-06-13T03:13:06.876301" elapsed="0.579397">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
-  (Session info: chrome=148.0.7778.216)
+<doc>Testa o bloqueio de entrada para um convite com data antiga.</doc>
+<status status="FAIL" start="2026-06-13T04:02:17.209214" elapsed="0.545309">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=149.0.7827.103)
 Stacktrace:
-0   chromedriver                        0x0000000104734c40 cxxbridge1$str$ptr + 3221216
-1   chromedriver                        0x000000010472cb1c cxxbridge1$str$ptr + 3188156
-2   chromedriver                        0x00000001041ef8f4 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75152
-3   chromedriver                        0x00000001041e799c _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 42552
-4   chromedriver                        0x00000001041da140 cxxbridge1$string$len + 5152
-5   chromedriver                        0x00000001041dbc44 cxxbridge1$string$len + 12068
-6   chromedriver                        0x00000001041da5a8 cxxbridge1$string$len + 6280
-7   chromedriver                        0x00000001041d9d54 cxxbridge1$string$len + 4148
-8   chromedriver                        0x00000001041d9a80 cxxbridge1$strin...
+0   chromedriver                        0x00000001025c2f88 cxxbridge1$str$ptr + 3190432
+1   chromedriver                        0x00000001025bb134 cxxbridge1$str$ptr + 3158092
+2   chromedriver                        0x00000001020673a8 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74080
+3   chromedriver                        0x000000010205f148 _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 40704
+4   chromedriver                        0x0000000102052154 cxxbridge1$string$len + 4688
+5   chromedriver                        0x0000000102053b40 cxxbridge1$string$len + 11324
+6   chromedriver                        0x00000001020525bc cxxbridge1$string$len + 5816
+7   chromedriver                        0x0000000102051da4 cxxbridge1$string$len + 3744
+8   chromedriver                        0x0000000102051a90 cxxbridge1$strin...
     [ Message content over the limit has been removed. ]
-... _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 329308
-15  chromedriver                        0x00000001046f2b70 cxxbridge1$str$ptr + 2950672
-16  chromedriver                        0x00000001046f62c8 cxxbridge1$str$ptr + 2964840
-17  chromedriver                        0x00000001046d78a8 cxxbridge1$str$ptr + 2839368
-18  chromedriver                        0x00000001046f6b48 cxxbridge1$str$ptr + 2967016
-19  chromedriver                        0x00000001046c83d4 cxxbridge1$str$ptr + 2776692
-20  chromedriver                        0x000000010471b7ac cxxbridge1$str$ptr + 3117644
-21  chromedriver                        0x000000010471b90c cxxbridge1$str$ptr + 3117996
-22  chromedriver                        0x000000010472c774 cxxbridge1$str$ptr + 3187220
+... _RNvCs9NA52FrZ4pF_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 327884
+15  chromedriver                        0x0000000102581a30 cxxbridge1$str$ptr + 2922824
+16  chromedriver                        0x00000001025851ac cxxbridge1$str$ptr + 2937028
+17  chromedriver                        0x0000000102567648 cxxbridge1$str$ptr + 2815328
+18  chromedriver                        0x0000000102585a40 cxxbridge1$str$ptr + 2939224
+19  chromedriver                        0x0000000102558870 cxxbridge1$str$ptr + 2754440
+20  chromedriver                        0x00000001025a9ec0 cxxbridge1$str$ptr + 3087832
+21  chromedriver                        0x00000001025aa020 cxxbridge1$str$ptr + 3088184
+22  chromedriver                        0x00000001025bad8c cxxbridge1$str$ptr + 3157156
 23  libsystem_pthread.dylib             0x000000018c821c58 _pthread_start + 136
 24  libsystem_pthread.dylib             0x000000018c81cc1c thread_start + 8</status>
 </test>
-<doc>Suite de Testes de UI: Emissão de Novos Convites</doc>
-<status status="FAIL" start="2026-06-13T03:13:03.531038" elapsed="3.925026"/>
+<doc>Suite de Testes de UI: Validação de Convites na Portaria</doc>
+<status status="FAIL" start="2026-06-13T04:02:10.439094" elapsed="7.315879"/>
 </suite>
 <statistics>
 <total>
